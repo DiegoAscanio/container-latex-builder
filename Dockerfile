@@ -1,4 +1,4 @@
-FROM amd64/ubuntu:focal
+FROM amd64/ubuntu:24.04
 MAINTAINER  Diego Ascânio Santos <ascanio@cefetmg.br>
 RUN apt update && DEBIAN_FRONTEND="noninteractive" TZ="America/Sao_Paulo" apt install -y make latexmk texlive texlive-full texlive-lang-portuguese texlive-latex-extra texlive-publishers texlive-science texlive-xetex texlive-fonts-extra git
 COPY compilar_trabalho.sh /usr/local/bin/
